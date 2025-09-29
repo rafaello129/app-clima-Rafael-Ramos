@@ -1,0 +1,29 @@
+.weatherCard {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .mainTemp {
+    font-weight: 300;
+    flex-shrink: 0;
+  }
+  
+  .weatherIcon {
+    width: 120px;
+    height: 120px;
+    margin-left: auto;
+    object-fit: contain;
+    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
+  }
+  
+  .detailItem {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    
+    width: calc(50% - 8px); 
+  
+
+    @media (min-width: 600px) {
+      width: calc(25% - 8px);
+    }
+  }
