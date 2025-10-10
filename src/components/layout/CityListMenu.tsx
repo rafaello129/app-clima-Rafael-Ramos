@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { IconButton, Tooltip, Menu, MenuItem, Popover, Typography, Box } from '@mui/material';
+import { IconButton, Tooltip, Menu, MenuItem, Popover, Typography } from '@mui/material';
 import LocationCityIcon from '@mui/icons-material/LocationCity';
 import { CombinedWeatherData } from '../../hooks/useWeatherData';
 import CityForecastPreview from '../common/CityForecastPreview';
