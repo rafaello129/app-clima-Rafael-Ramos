@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## 🌐 Live Demo
+
+The app is deployed on GitHub Pages: [https://rafaello129.github.io/clima](https://rafaello129.github.io/clima)
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -29,6 +33,13 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run deploy`
+
+Deploys the app to GitHub Pages.\
+This script builds the app and pushes it to the `gh-pages` branch.
+
+**Note:** The app is also automatically deployed via GitHub Actions whenever changes are pushed to the `main` branch.
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
@@ -44,3 +55,31 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## 🚀 Deployment
+
+This project is configured for automatic deployment to GitHub Pages:
+
+1. **Automatic Deployment**: Pushing to the `main` branch triggers a GitHub Actions workflow that builds and deploys the app automatically.
+
+2. **Manual Deployment**: You can also deploy manually using:
+   ```bash
+   npm run deploy
+   ```
+
+### First-time Setup for GitHub Pages
+
+To enable GitHub Pages for this repository:
+
+1. Go to repository Settings → Pages
+2. Under "Build and deployment":
+   - Source: Select "GitHub Actions"
+3. The app will be available at: `https://rafaello129.github.io/clima`
+
+### Configuration
+
+The app is configured with:
+- **Homepage**: `https://rafaello129.github.io/clima` (in package.json)
+- **Basename**: `/clima` (in BrowserRouter)
+- **GitHub Actions**: Workflow in `.github/workflows/deploy.yml`
+
