@@ -8,7 +8,7 @@ import './services/global.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/clima">
       <ThemeProvider>
         <App />
       </ThemeProvider>
