@@ -4,11 +4,9 @@ import {
   Typography,
   Button,
   Box,
-  Divider,
   Alert,
   Stack,
-  Switch,
-  FormControlLabel,
+
   alpha,
   useTheme,
   Paper,
@@ -26,11 +24,7 @@ import {
 } from '@mui/material';
 import DeleteSweepIcon from '@mui/icons-material/DeleteSweep';
 import SettingsIcon from '@mui/icons-material/Settings';
-import DarkModeIcon from '@mui/icons-material/DarkMode';
-import LightModeIcon from '@mui/icons-material/LightMode';
 import StorageIcon from '@mui/icons-material/Storage';
-import NotificationsIcon from '@mui/icons-material/Notifications';
-import ThermostatIcon from '@mui/icons-material/Thermostat';
 import InfoIcon from '@mui/icons-material/Info';
 import WarningAmberIcon from '@mui/icons-material/WarningAmber';
 import LocationCityIcon from '@mui/icons-material/LocationCity';
@@ -46,11 +40,6 @@ const SettingsPage: React.FC<SettingsPageProps> = ({ weatherHook }) => {
   const { clearAllCities, cities } = weatherHook;
   const [openDeleteDialog, setOpenDeleteDialog] = useState(false);
   
-  // Estados para configuraciones (puedes conectarlos a tu estado global)
-  const [darkMode, setDarkMode] = useState(false);
-  const [notifications, setNotifications] = useState(true);
-  const [temperatureUnit, setTemperatureUnit] = useState<'celsius' | 'fahrenheit'>('celsius');
-  const [windSpeedUnit, setWindSpeedUnit] = useState<'ms' | 'kmh'>('ms');
 
   const handleClearData = () => {
     clearAllCities();
