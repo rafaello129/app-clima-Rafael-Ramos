@@ -29,7 +29,7 @@ function App() {
           weatherDataMap={weatherHookData.data}
         />
 
-        <Box component="main" sx={{ flexGrow: 1, py: 4, px: 2 }}>
+        <Box component="main" sx={{ flexGrow: 1, py: 1, px:  0}}>
           <Routes>
             <Route 
               path="/" 
